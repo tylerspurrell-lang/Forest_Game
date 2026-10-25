@@ -34,7 +34,7 @@ I implemented ambient lighting using Shader Graph so that objects remain visible
 pressing 2 in game will change all the trees to ambient only 
 
 Ambient only screenshot -- 
-Ambient Shader graph screenshot --
+Ambient Shader graph screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160502.png
 
  3. Specular Lighting
 
