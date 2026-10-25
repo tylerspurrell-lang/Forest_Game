@@ -16,19 +16,39 @@ Graphics Implementations
     
     No lighting screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20153255.png
 
-    made a base material and removed all lighting from it, and gave it the tree colour 
+
+Implementation: I created a base material using the tree's colour without applying lighting calculations.
+
+How it works: The material displays its base colour without calculating how light illuminates the surface. This provides a baseline for comparing the other lighting techniques.
     
 
 Diffuse lighting 
 
-Diffuse lighting uses the surface direction and the direction of the light to determine how brightly a surface is illuminated.
+Diffuse lighting calculates how strongly a surface is illuminated based on the angle between its surface normal and the direction of the light.
 
-I implemented diffuse lighting using Unity Shader Graph. This helps objects in the forest respond to light and makes their shapes and surfaces easier to distinguish.
+Implementation: I used Unity Shader Graph to create a diffuse lighting effect for the forest environment.
+
+Basic calculation:
+
+NdotL = max(0, dot(N, L))
+
+N is the normalized surface normal.
+
+L is the normalized direction toward the light.
+
+dot(N, L) calculates how closely the surface faces the light.
+
+max(0, ...) prevents the diffuse contribution from becoming negative.
+
+The diffuse contribution is then multiplied by the light colour and the surface's base colour.
+
+How it benefits the scene: Diffuse lighting makes the shapes of objects easier to distinguish by illuminating surfaces according to their orientation.
+
+How my implementation differs: I built the shader using a visual Shader Graph rather than writing the shader entirely in HLSL. This allowed me to connect and adjust the shader operations visually for my scene.
 
 diffuse only Shader Graph -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160448.png
 diffuse lighting in game -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160448.png
 
-Different from in class-- I'm not really sure how it differs, this is my own work and I could not find anything other then code on diffuse lighting which is obviously different from shader graphs. I can assure no in class shader graphs were copied. All I did was add a simple Fresnel effect to a colour I thought was a good highlight for my scene and multiplied them together.  
 
  2. Ambient Lighting
 
@@ -45,33 +65,64 @@ How it differs- Same thing not really sure. I have missed a good amount of class
 
  3. Specular Lighting
 
-Specular lighting adds highlights to surfaces based on the relationship between the light, surface, and viewing direction.
+Specular lighting produces highlights on surfaces based on the relationship between the light, the surface orientation, and the viewing direction.
 
-I implemented specular lighting using Shader Graph to give selected surfaces additional highlights and make the lighting more visually noticeable.
+Implementation: I created a specular lighting shader using Unity Shader Graph. Pressing the number 3 key switches the scene to the specular-only mode.
 
-You can see this by pressing 3 in game 
+Basic calculation:
+
+V = normalize(Direction from Surface to Camera)
+
+R = reflect(-L, N)
+
+Specular = pow(max(0, dot(R, V)), Shininess)
+
+L is the direction toward the light.
+
+N is the surface normal.
+
+V is the direction toward the camera.
+
+R is the reflected light direction.
+
+Shininess controls how concentrated the highlight is.
+
+The calculation produces a stronger highlight when the reflected light direction closely matches the viewing direction. This is a simplified reflection-vector specular model.
+
+How it benefits the scene: Specular lighting makes highlights more noticeable and demonstrates how lighting can change the appearance of surfaces.
 
 Specular Lighting screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160352.png
 Specular Lighting shader graph screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160443.png
 
-My ambient only shader just converts the world direction and the main camera direction so we know what angle the light comes from, into a normalized value, then takes the dot product of that value with the normalized world vector, and adds saturation and shininess to those places  
 
-Combining them
 
-You can combine them by pressing 4 in game 
-this takes all 3 and adds them together 
+Pressing the number 4 key switches to the combined lighting mode.
 
---This just takes all the math above and adds them together
+Implementation: This mode combines the diffuse, ambient, and specular lighting contributions.
+
+Simplified calculation:
+
+Final Colour = Diffuse + Ambient + Specular
+
+In a practical shader, the contributions may also be multiplied by their respective light and material colours before being combined.
+
+How it benefits the scene: Combining these techniques provides a more complete lighting result. Diffuse lighting defines surface orientation, ambient lighting adds general illumination, and specular lighting creates highlights.
 
 Shader Graph screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160438.png
 in game screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160357.png
 
-and then pressing 5 will add my custom outline shader to the trees as well as all the lighting above 
+Combined Lighting with Custom Outline
+
+Pressing the number 5 key adds the custom outline effect to the combined lighting mode.
+
+Implementation: I combined the lighting effects with a blue outline effect on the trees.
+
+How it benefits the scene: The outline adds visual emphasis and helps distinguish the tree shapes from the surrounding environment.
 
 Shader Graph screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160427.png
 in game screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160403.png
 
-This is the exact same thing as number 4 but it adds the blue border around it 
+
 
 
 4. Custom Shader One — Blue Radio Outline
