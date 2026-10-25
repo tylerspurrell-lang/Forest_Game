@@ -61,6 +61,8 @@ Combining them
 You can combine them by pressing 4 in game 
 this takes all 3 and adds them together 
 
+--This just takes all the math above and adds them together
+
 Shader Graph screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160438.png
 in game screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160357.png
 
@@ -68,6 +70,9 @@ and then pressing 5 will add my custom outline shader to the trees as well as al
 
 Shader Graph screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160427.png
 in game screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160403.png
+
+This is the exact same thing as number 4 but it adds the blue border around it 
+
 
 4. Custom Shader One — Blue Radio Outline
 
