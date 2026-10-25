@@ -70,7 +70,7 @@ I created a blue outline shader for the radio. The outline helps the player reco
 Purpose: Improve player guidance and make an important interactive object stand out.
 
 Shader Graph screenshot -- 
-in game screenshot -- 
+in game screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20162131.png
 
  5. Custom Shader Two — Cyan Tree-Leaf Outline
 
