@@ -54,7 +54,7 @@ Combining them
 You can combine them by pressing 4 in game 
 this takes all 3 and adds them together 
 
-Shader Graph screenshot -- 
+Shader Graph screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160438.png
 in game screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160357.png
 
 and then pressing 5 will add my custom outline shader to the trees as well as all the lighting above 
