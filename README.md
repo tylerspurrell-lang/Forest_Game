@@ -59,7 +59,7 @@ in game screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/mai
 
 and then pressing 5 will add my custom outline shader to the trees as well as all the lighting above 
 
-Shader Graph screenshot -- 
+Shader Graph screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160427.png
 in game screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160403.png
 
 4. Custom Shader One — Blue Radio Outline
