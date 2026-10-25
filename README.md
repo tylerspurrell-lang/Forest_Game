@@ -79,7 +79,7 @@ I created a cyan outline shader for the tree leaves. The outline adds visual emp
 Purpose: Improve the visual appearance of the environment and give the foliage more definition.
 
 Shader Graph screenshot -- 
-in game screenshot -- 
+in game screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20162154.png
 
 
  Colour Grading
