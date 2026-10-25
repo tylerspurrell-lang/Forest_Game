@@ -47,7 +47,7 @@ I implemented specular lighting using Shader Graph to give selected surfaces add
 You can see this by pressing 3 in game 
 
 Specular Lighting screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160352.png
-Specular Lighting shader graph screenshot -- 
+Specular Lighting shader graph screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160443.png
 
 Combining them
 
