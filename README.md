@@ -28,6 +28,8 @@ I implemented diffuse lighting using Unity Shader Graph. This helps objects in t
 diffuse only Shader Graph -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160448.png
 diffuse lighting in game -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160448.png
 
+Different from in class-- I'm not really sure how it differs, this is my own work and I could not find anything other then code on diffuse lighting which is obviously different from shader graphs. I can assure no in class shader graphs were copied. All I did was add a simple Fresnel effect to a colour I thought was a good highlight for my scene and multiplied them together.  
+
  2. Ambient Lighting
 
 Ambient lighting adds general illumination to surfaces that might otherwise appear too dark.
@@ -39,6 +41,8 @@ pressing 2 in game will change all the trees to ambient only
 Ambient only screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160345.png
 Ambient Shader graph screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160502.png
 
+How it differs- Same thing not really sure. I have missed a good amount of classes so I don't really know what was referenced in class. But my ambient light just takes in the colour of the trees and amplifies it  
+
  3. Specular Lighting
 
 Specular lighting adds highlights to surfaces based on the relationship between the light, surface, and viewing direction.
@@ -49,6 +53,8 @@ You can see this by pressing 3 in game
 
 Specular Lighting screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160352.png
 Specular Lighting shader graph screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20160443.png
+
+My ambient only shader just converts the world direction and the main camera direction so we know what angle the light comes from, into a normalized value, then takes the dot product of that value with the normalized world vector, and adds saturation and shininess to those places  
 
 Combining them
 
