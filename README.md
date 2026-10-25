@@ -12,7 +12,14 @@ The goal of this project is to apply computer graphics concepts to an interactiv
 
 Graphics Implementations
 
- 1. Diffuse Lighting
+ 1. No Lighting
+    
+    No lighting screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/main/Screenshot%202026-10-25%20153255.png
+
+    made a base material and removed all lighting from it, and gave it the tree colour 
+    
+
+Diffuse lighting 
 
 Diffuse lighting uses the surface direction and the direction of the light to determine how brightly a surface is illuminated.
 
@@ -24,11 +31,34 @@ Ambient lighting adds general illumination to surfaces that might otherwise appe
 
 I implemented ambient lighting using Shader Graph so that objects remain visible in areas without strong direct lighting. This helps maintain visibility throughout the forest environment.
 
+pressing 2 in game will change all the trees to ambient only 
+
+Ambient only screenshot -- 
+Ambient Shader graph screenshot --
+
  3. Specular Lighting
 
 Specular lighting adds highlights to surfaces based on the relationship between the light, surface, and viewing direction.
 
 I implemented specular lighting using Shader Graph to give selected surfaces additional highlights and make the lighting more visually noticeable.
+
+You can see this by pressing 3 in game 
+
+Specular Lighting screenshot -- 
+Specular Lighting shader graph screenshot -- 
+
+Combining them
+
+You can combine them by pressing 4 in game 
+this takes all 3 and adds them together 
+
+Shader Graph screenshot -- 
+in game screenshot -- 
+
+and then pressing 5 will add my custom outline shader to the trees as well as all the lighting above 
+
+Shader Graph screenshot -- 
+in game screenshot -- 
 
 4. Custom Shader One — Blue Radio Outline
 
@@ -36,7 +66,8 @@ I created a blue outline shader for the radio. The outline helps the player reco
 
 Purpose: Improve player guidance and make an important interactive object stand out.
 
-Evidence: Add a screenshot showing the radio with its blue outline.
+Shader Graph screenshot -- 
+in game screenshot -- 
 
  5. Custom Shader Two — Cyan Tree-Leaf Outline
 
@@ -44,22 +75,17 @@ I created a cyan outline shader for the tree leaves. The outline adds visual emp
 
 Purpose: Improve the visual appearance of the environment and give the foliage more definition.
 
-Evidence: Add a screenshot showing the tree leaves with their cyan outline.
+Shader Graph screenshot -- 
+in game screenshot -- 
+
 
  Colour Grading
 I failed to figure the colour grading out for the scene and gave up 
 
 
-
-
-
-
-
 ## Project Progression Reflection
 
 During this project, I developed a 3D forest environment and explored how computer graphics techniques can improve an interactive scene. I used Shader Graph to implement lighting effects and created two custom outline shaders. The blue radio outline helps communicate interaction, while the cyan tree-leaf outline adds emphasis to the foliage. These features helped me understand how shaders can serve both functional and artistic purposes. I also began experimenting with LUT-based colour grading but could not figure out the implementation in time 
-
-
 
 ## Playable Build
 
@@ -73,7 +99,7 @@ The presentation will demonstrate the project, explain the graphics implementati
 
 ## AI Use Acknowledgement
 
-I used ChatGPT as a support tool to clarify computer graphics terminology and help organize project documentation. I reviewed the information and applied relevant concepts to my project. Screenshots of relevant AI interactions will be included with the submission, as required by the assignment.
+No AI use 
 
 ## Repository
 
