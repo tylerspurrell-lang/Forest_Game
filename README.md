@@ -25,6 +25,8 @@ Diffuse lighting uses the surface direction and the direction of the light to de
 
 I implemented diffuse lighting using Unity Shader Graph. This helps objects in the forest respond to light and makes their shapes and surfaces easier to distinguish.
 
+diffuse only Shader Graph -- 
+
  2. Ambient Lighting
 
 Ambient lighting adds general illumination to surfaces that might otherwise appear too dark.
