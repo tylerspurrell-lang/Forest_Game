@@ -155,24 +155,6 @@ However, I was unable to complete the LUT implementation in the scene. Colour gr
 Status: Incomplete.
 
 
-## Project Progression Reflection
-
-During this project, I developed a 3D forest environment and explored how computer graphics techniques can improve an interactive scene. I used Shader Graph to implement lighting effects and created two custom outline shaders. The blue radio outline helps communicate interaction, while the cyan tree-leaf outline adds emphasis to the foliage. These features helped me understand how shaders can serve both functional and artistic purposes. I also began experimenting with LUT-based colour grading but could not figure out the implementation in time 
-
-## Playable Build
-
-**Windows build:** Add the link to the GitHub Release containing the playable build once it has been created and tested.
-
-## Presentation
-
-**Project video:** Add the link to the unlisted YouTube presentation once it is uploaded.
-
-The presentation will demonstrate the project, explain the graphics implementations, and discuss what I learned during development.
-
 ## AI Use Acknowledgement
 
 No AI use 
-
-## Repository
-
-This repository contains the Unity project files and supporting documentation. The final submission will include the required screenshots, a tested playable build, and the project presentation.
