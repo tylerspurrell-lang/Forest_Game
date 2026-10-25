@@ -145,7 +145,14 @@ in game screenshot -- https://github.com/tylerspurrell-lang/Forest_Game/blob/mai
 
 
  Colour Grading
-I failed to figure the colour grading out for the scene and gave up 
+
+I began experimenting with LUT-based colour grading to change the overall colour appearance of the forest.
+
+A lookup table (LUT) maps input colours to adjusted output colours. This can be used to create a warmer, cooler, or otherwise modified colour palette.
+
+However, I was unable to complete the LUT implementation in the scene. Colour grading remains an area for further development.
+
+Status: Incomplete.
 
 
 ## Project Progression Reflection
